@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <section class="input">
+           <div class="bill_input">
+            <h3>Bill</h3>
+            <i class="fa fa-rupee" style="position: absolute; padding: 10px; font-size: 25px; color: rgba(144, 19, 254, 0.75);;"></i>
+            <input type="number" value="" name="Bill_amount" id="Bill_amount">
+           </div>
+           <div class="select_tip">
+            <h3>Select Tip</h3>
+      
+                <div id="Select_percent">
+                    <button type="button" value="5%">5%</button>
+                    <button type="button" value="10%">10%</button>
+                    <button type="button" value="15%">15%</button>
+                    <button type="button" value="25%">25%</button>
+                    <button type="button" value="50%">50%</button>
+                    <button type="button" value="75%">75%</button>
+                  </div>
+                  <input type="number" value="" name="Custom_tip" id="custom" placeholder="Custom Tip">
+       
+           </div>
+           <div class="no_of_People">
+            <h3>Number Of People</h3>
+            <input type="number" value="" name="no_of_People" id="no_of_People" placeholder="No Of Peoples">
+           </div>
+
+           <button type="submit" id="generate_bill">Generate Bill</button>
+        </section>
+
+        <section class="output">
+            <h1 style="text-align: center;">
+                Bill Split Result
+            </h1> 
+
+           <div class="tip_amount">
+             <h3>Tip Amount:</h3>
+             <h1 id="tip_amount"></h1>
+           </div>
+
+           <div class="total">
+             <h3>Total:</h3>
+             <h1 id="total"></h1>
+           </div>
+
+           <div class="each_person_bill">
+             <h3>Each Person Bill:</h3>
+             <h1 id="each_person_bill"></h1>
+           </div>
+
+           <button type="reset" id="reset_btn">Reset</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
